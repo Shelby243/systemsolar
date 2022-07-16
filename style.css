@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+    font-family: 'MontSerrat',sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0.5,0,0,0.5)) , url(images/galaxy.gif);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /*min-height: 100vh;*/
+    height: 1200px;
+    
+
+    
+
+}
+.top{
+   /* margin-bottom:60px;*/
+	/*margin-bottom: 20%;
+	margin-top: 5%;
+	
+	
+	/*top: 100px;
+    font-size: 15px;
+	
+    */
+    height:100px;
+    width: 800px;
+    padding: 30px 15px 16px 75px;
+    /*border: 1px solid #999;*/
+    margin-left: 12%;
+   /* margin-bottom: 1%;*/
+    
+}
+
+.top h1{
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: #fff;
+	font-family: sans-serif;
+    text-align: center;
+    
+}
+
+.form {
+    height:100px;
+    width: 800px;
+    padding: 30px 15px 16px 75px;
+   /* margin: 100px 0 105px;*/
+  /* margin-top: 40%;
+   border: 1px solid #999;*/
+   
+   margin-left: 12%;
+   
+    
+}
+
+.form input{
+    font-size: 17px;
+    /*padding: 10px 17px;*/
+    border:1px solid #999;
+    width: 30%;
+    height:40px;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border-radius: 5px;
+    
+}
+.form select{
+    font-size: 17px;
+    border:1px solid #999;
+    width: 30%;
+    height:40px;
+    border-radius: 5px;
+    margin-left: 2.5px;
+    text-align: center;
+
+}
+.form button{
+    color:#fff;
+    cursor: pointer;
+   /* margin-left: 8.5%;*/
+    font-size: 17px;
+    background: #3A3E59;
+    text-align: center;
+    width: 30%;
+    height:40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.load{
+    
+    height:400px;
+    width: 1100px;
+   /* border: 1px solid #999;*/
+    padding: 30px 240px 16px 390px;
+    margin-bottom: 57%;
+    background: rgba(180, 180, 180, 0.2);
+    
+}
+
+.load img
+{
+    height:350px;
+    width: 300px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s 0.05s ease;
+    
+    
+    
+    
+}
+.load .box
+{
+    height:200px;
+    width: 400px;
+    /*border: 1px solid #999;*/
+    margin-left: 45px;
+    margin-top: 100px;
+    text-align: center;
+    opacity: 0;
+    background: rgba(210, 210, 210, 0.2);
+}
+.load.result{
+    height:400px;
+    width: 1100px;
+    /*border: 1px solid #999;*/
+    padding: 30px 150px 16px 100px;
+    margin-bottom: 57%;
+    background: rgba(180, 180, 180, 0.2);
+    display: flex;
+}
+.load.result img{
+    height:350px;
+    width: 50%;
+    
+}
+.load.result .box
+{
+    
+    opacity: 1;
+    transition: opacity 0.5s 0.05s ease;
+
+}
+.box h1{
+    font-size: 21px;
+    font-weight: 400;
+    color:#fff;
+
+}
+h1 span
+{
+    font-weight: 800;
+}
+.circle{
+    height: 120px;
+    width: 120px;
+    line-height: 100px;
+    font-size: 21px;
+    font-weight: 800;
+    color:#fff;
+    background: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    /*border: 1px solid #999;*/
+}
+
+.load.MassError
+{
+    height:150px;
+    width: 1100px;
+    background: rgba(180, 180, 180, 0.1);
+    position: relative;
+    margin-bottom: 100%;
+    display: flex;
+    
+}
+.load.MassError img{
+    opacity: 0;
+}
+.load.MassError .boxErr
+{
+    
+    opacity: 1;
+    transition: opacity 0.01s 0.01s ease;
+}
+.load .boxErr{
+    position: absolute;
+    height: 50px;
+    width:400px;
+   /* margin-top: 47px;*/
+    background: rgba(60, 60, 60, 1);
+    /*border: 1px solid #999;*/
+    opacity:0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.boxErr p{
+    font-size: 18px;
+    font-weight: 400;
+    color:#fff;
+}
+
+.load.PlanetError
+{
+    height:150px;
+    width: 1100px;
+    background: rgba(180, 180, 180, 0.1);
+    position: relative;
+    margin-bottom: 100%;
+    display: flex;
+}
+.load .boxErr2{
+    position: absolute;
+    height: 50px;
+    width:400px;
+   /* margin-top: 47px;*/
+    background: rgba(60, 60, 60, 1);
+    /*border: 1px solid #999;*/
+    opacity:0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.boxErr2 p{
+    font-size: 18px;
+    font-weight: 400;
+    color:#fff;
+}
+.load.PlanetError .boxErr2{
+    opacity: 1;
+    transition: opacity 0.5s 0.05s ease;
+}
+.load.PlanetError img{
+    opacity: 0;
+}
